@@ -1,0 +1,22 @@
+<div style="margin-top: 20px;">
+<h2>Employee details</h2>
+<div *ngFor="let dep of departments">
+    <h3>Departement: {{dep.name}}</h3>
+<table >
+    <thead>
+    <th>Employee ID</th>
+      <th>Employee name</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of dep.employees | keyvalue">
+        <td>{{ x.key }}</td>
+        <td>{{x.value}}</td>
+      </tr>
+    </tbody>
+</table>
+<div>
+<h4>Add new employee</h4>
+  <app-employee-modal (closeModal)="addEmployee(dep, $event)"></app-employee-modal>
+</div>
+</div>
+</div>

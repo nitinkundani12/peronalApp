@@ -1,0 +1,33 @@
+<h2>Departments</h2>
+<table >
+    <thead>
+        <th>Select department</th>
+      <th>Department name</th>
+      <th>Department head</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of data;">
+        <td>
+            <input type="checkbox" [(ngModel)]="x.isSelected">
+        </td>
+        <td>{{ x.name }}</td>
+        <td>{{x.head}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button (click)="handleClick()">View</button>
+  <!-- <button (click)="openModal()">Add New</button> -->
+
+  <div>
+    <h4>Add new department</h4>
+  <app-modal (closeModal)="addDepartment($event)"></app-modal>
+</div>
+
+    <div>
+    <app-employee [departments] = "selectedDep"></app-employee>
+    </div>
+
+
+
+  

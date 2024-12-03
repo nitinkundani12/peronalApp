@@ -1,0 +1,21 @@
+[
+    {
+        "name": "IT",
+       "head": "Ramesh",
+       "employees" : {
+        "123": "Suresh",
+        "356": "Gangesh"
+       },
+       "isSelected": false
+    },
+
+    {
+        "name": "HR",
+       "head": "Shyam",
+       "employees" : {
+        "467": "Emp1",
+        "845": "Emp2"
+       },
+       "isSelected": false
+    }
+]

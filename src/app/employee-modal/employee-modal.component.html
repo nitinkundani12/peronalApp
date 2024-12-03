@@ -1,0 +1,18 @@
+<div class="modal" >
+
+    <div class="modal-content">
+
+        <form #newObjectForm="ngForm" (ngSubmit)="onSubmit(newObjectForm.value)">
+
+            <input type="text" name="id" ngModel>
+
+            <input type="text" name="name" ngModel>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+</div>
+
